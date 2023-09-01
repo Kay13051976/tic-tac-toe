@@ -35,7 +35,7 @@ class TicTacToe:
         # If valid move, assign square to letter then make a move then return true if invalid return false
         if self.board[square] == ' ':
             self.board[square] = letter
-            if self.winner(square, letter):
+            if self.winner(square, letter): # To check for the winner
                 self.current_winner = letter
             return True
         return False
@@ -63,6 +63,12 @@ def play(game, x_player, o_player, print_game=True):
                 print(letter + f' makes a move to square {square}')
                 game.print_board()
                 print('') # Empty line
+            if game.current_winner:
+                if print_game:
+                    print(letter + ' WINS !')
+                return letter
+            # After player made a move, alternate letter
+            # Switches player
             letter = 'O' if letter == 'X' else 'X' 
         
     
