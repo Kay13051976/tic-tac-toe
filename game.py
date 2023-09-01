@@ -1,4 +1,4 @@
-
+form player import HumanPlayer, RandomComputerPlayer
 # Define class TicTacToe and Creates a board
 class TicTacToe:
     def __init__(self): # Use a list of length nine to represent 3x3 board then assign an index in this length nine list to each of the spaces
@@ -102,4 +102,9 @@ def play(game, x_player, o_player, print_game=True): # Return the winner of the 
         if print_game:
             print('It\'s a tie!')
         
-    
+ if __name__ == '__main__':
+    # import human player nad random computer player from player file on the top of the page 
+    x_player = HumanPlayer('X')
+    o_player = RandomComputerPlayer('O')
+    t = TicTacToe()
+    play(t, x_player, o_player, print_game=True)
