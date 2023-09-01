@@ -24,6 +24,9 @@ class TicTacToe:
             if spot == ' ':
                 move.append(i)
             return moves
+
+    def empty_square(self):
+        return ' ' in self.board
     
 # Define the play function outside the TicTacToe class to passing in a game, an X player, and O player to print out the step to tell player
 def play(game, x_player, o_player, print_game=True):
@@ -35,3 +38,6 @@ def play(game, x_player, o_player, print_game=True):
 
 
 
+    while game.empty_square():
+        pass
+    
