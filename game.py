@@ -14,3 +14,16 @@ class TicTacToe:
         number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range (3)] # What indices are in the rows for each of the rows like sub array[(0,1,2),(3,4,5),(6,7,8)](just like on the paint board)
         for row in number_board:
               print('| ' + ' | '.join(row) + ' |')
+
+
+    # Create available moves method to tell player what are the available moves after they make a move
+    def available_move(self):
+        moves = []
+        for (i, spot) in enumerate(self.board):
+            # ['x', 'x', 'o'] --> [(0:'x'), (1:'x'), (2:'x')]
+            if spot == ' ':
+                move.append(i)
+            return moves
+    
+
+
