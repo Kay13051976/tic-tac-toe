@@ -25,5 +25,13 @@ class TicTacToe:
                 move.append(i)
             return moves
     
+# Define the play function outside the TicTacToe class to passing in a game, an X player, and O player to print out the step to tell player
+def play(game, x_player, o_player, print_game=True):
+    if print_game:
+        game.print_board_nums()# Return the winner of the game(the letter)! or None for a tie
+
+    letter = 'X' # Starting letter
+
+
 
 
