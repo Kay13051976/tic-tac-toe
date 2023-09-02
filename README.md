@@ -1,32 +1,11 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# TicTacToe
+![image in different device ]
 
-Welcome,
+The link to TicTacToe [link]()
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+The TicTacToe is a Python terminal project to foster social interaction development.TicTacToe can be used to promote several cognitive skills, including counting and spatial skills and colour and shape identification. It helps develop essential strategic thinking and planning skills. It serves as a foundation for more complex strategy games and can provide entertainment and mental stimulation for people of all ages. It reinforces basic math skills. While Tic-Tac-Toe is a simple game, it can be a valuable tool for learning. 
+Users can quickly learn the game's rules and which side they want to be on. They should continue playing the game or stop after the match ends according to the instructions.
 
-## Reminders
+## How to play:
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
