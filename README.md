@@ -22,6 +22,18 @@ Ending the Game:
 
 Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and with experienced players, it often ends in a draw.
 
+# User Stories
+
+## First Time Visitor Goals:
+ . As a first-time visitor, I want to quickly understand the program's primary purpose so that I can learn more about this program.
+ . As a first-time visitor, I want to navigate the program quickly to find clear instructions and content about playing the game.
+ . As a first-time visitor, I must provide a well-designed tutorial or onboarding process to ensure new users enjoy the game with clarity.
+ . As a first-time visitor, I want to be able to find a straightforward way to initiate their first game and start a new game when the game is over
+ . As a first-time visitor, I want to find a helpful program to fulfil my Expectations.
+
+## Frequent Visitor Goals:
+  . As a Frequent User, I want the option to customize the game's settings, such as board size, difficulty level, and symbols, so that I can tailor the game to my preferences and challenge myself with different variations."( Future improvement)
+
 
 
 
