@@ -8,7 +8,7 @@ class TicTacToe:
     def greeting(self):
         print('Welcome to Tic-Tic-Toe game')
     
-    def instructions(self):
+    def instructions(self): # need to put game rule tomorrow
         print('Pick the side they want to be on ')
 
     def print_board(self):
