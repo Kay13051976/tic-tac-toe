@@ -7,6 +7,9 @@ class TicTacToe:
 
     def greeting(self):
         print('Welcome to Tic-Tic-Toe game')
+    
+    def instructions(self):
+        print('Pick the side they want to be on ')
 
     def print_board(self):
         for row in [self.board[i*3:(i+1)*3] for i in range(3)]: # Represent three row by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
@@ -112,5 +115,6 @@ if __name__ == '__main__':
      o_player = RandomComputerPlayer('O')
      t = TicTacToe() 
      t.greeting()
+     t.instructions()
 
      play(t, x_player, o_player, print_game=True)
