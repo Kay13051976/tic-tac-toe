@@ -34,6 +34,8 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
 ## Frequent Visitor Goals:
   . As a Frequent User, I want the option to customize the game's settings, such as board size, difficulty level, and symbols, so that I can tailor the game to my preferences and challenge myself with different variations."( Future improvement)
 
+# Features
+ . When the program is loaded
+ The user can see a welcome message which engages to start playing and the polite question to enter the letter 'X' or 'O' to pick the side they side they want.
 
-
-
+! [image of loaded page]()
