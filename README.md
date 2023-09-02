@@ -39,3 +39,11 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
  The user can see a welcome message which engages to start playing and the polite question to enter the letter 'X' or 'O' to pick the side they side they want.
 
 ! [image of loaded page]()
+ . When the user pick the side.
+ ! [image of pick side page]()
+ . Sends the side 'X' or 'O' to tell the user'
+ ! [image of context to tell user witch side is on]()
+ . Show the TicTacToe game board and and context to tell user with side turn and ask user to put number 0-9 then click enter
+ ! [image of tictactoe game board page]()
+ . the random computer player will pick the number and show context to tell the result the ask user to put number 0-9 again.
+ ! [image of random computer generate the number ]()
