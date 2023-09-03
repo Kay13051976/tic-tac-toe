@@ -1,6 +1,8 @@
 from player import *
+
 # Define class TicTacToe and Creates a board
 class TicTacToe:
+
     def __init__(self): 
         # Use a list of length nine to represent 3x3 board then assign an index in this length nine list to each of the spaces
         self.board = [' ' for _ in range(9)]
@@ -28,7 +30,6 @@ class TicTacToe:
         for row in number_board:
               print('| ' + ' | '.join(row) + ' |')
 
-
     # Create available moves method to tell player what are the available moves after they make a move
     def available_moves(self):
         moves = []
@@ -53,6 +54,7 @@ class TicTacToe:
                 self.current_winner = letter
             return True
         return False
+
     def winner(self, square, letter):
         # Check all of 3 in a row anywhere
         row_ind = square // 3 
@@ -63,6 +65,7 @@ class TicTacToe:
         # Check column
         col_ind = square % 3
         column = [self.board[col_ind+i*3] for i in range(3)]
+
         if all([spot == letter for spot in column]):
             return True
         
@@ -114,6 +117,7 @@ def play(game, x_player, o_player, print_game=True):
 
     if print_game:
             print("It's a tie!")
+        
         
 if __name__ == '__main__':
      # import human player nad random computer player from player file on the top of the page 
