@@ -1,4 +1,5 @@
-from player import *
+from player import HumanPlayer, RandomComputerPlayer
+from colorama import Fore, Style
 
 # Define class TicTacToe and Creates a board
 class TicTacToe:
