@@ -15,13 +15,16 @@ class TicTacToe:
         print('Pick the side they want to be on ')
 
     def print_board(self):
-        for row in [self.board[i*3:(i+1)*3] for i in range(3)]: # Represent three row by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
-            print('| ' + ' | '.join(row) + ' |') # Join row in a string where the separator is this vertical line
+         # Represent three row by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
+        for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
+            # Join row in a string where the separator is this vertical line
+            print('| ' + ' | '.join(row) + ' |') 
 
     # Creates method to print out the number on the board, What number corresponds to what box
     @staticmethod
     def print_board_nums():
-        number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range (3)] # What indices are in the rows for each of the rows like sub array[(0,1,2),(3,4,5),(6,7,8)](just like on the paint board)
+        # What indices are in the rows for each of the rows like sub array[(0,1,2),(3,4,5),(6,7,8)](just like on the paint board)
+        number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range (3)] 
         for row in number_board:
               print('| ' + ' | '.join(row) + ' |')
 
