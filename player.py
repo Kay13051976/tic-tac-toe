@@ -5,7 +5,7 @@ import math
 class Player:
     """ Creates an instance of Player """
     def __init__(self, letter): 
-       # InputName is the name that the player picks their name
+       # letter is the name that the player picks their name
        self.letter = letter
     
     def get_move(self, game):  
@@ -47,7 +47,7 @@ class HumanPlayer(Player):
 
             except ValueError:
                 print('Invalid square. Try again.')
-                
+
         return val
      
       

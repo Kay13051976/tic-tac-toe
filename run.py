@@ -13,11 +13,11 @@ class TicTacToe:
         print('Welcome to Tic-Tic-Toe game')
     
     def instructions(self): 
-        # need to put game rule tomorrow
+        # Need to put game rule tomorrow
         print('Pick the side they want to be on ')
 
     def print_board(self):
-         # Represent three row by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
+         # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
         for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
             # Join row in a string where the separator is this vertical line
             print('| ' + ' | '.join(row) + ' |') 
@@ -105,8 +105,8 @@ def play(game, x_player, o_player, print_game=True):
             if print_game:
                 print(letter + f' makes a move to square {square}')
                 game.print_board()
-                print('') 
                 # Empty line
+                print('') 
             if game.current_winner:
                 if print_game:
                     print(letter + ' WINS !')
@@ -118,9 +118,9 @@ def play(game, x_player, o_player, print_game=True):
     if print_game:
             print("It's a tie!")
         
-        
+
 if __name__ == '__main__':
-     # import human player nad random computer player from player file on the top of the page 
+     # Import human player nad random computer player from player file on the top of the page 
      x_player = HumanPlayer('X')
      o_player = RandomComputerPlayer('O')
      t = TicTacToe() 
