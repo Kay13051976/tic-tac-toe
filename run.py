@@ -11,11 +11,11 @@ class TicTacToe:
         # Create variable self current winner to keep track of wether or not there is a current winner in this game. And if there is who is it?
 
     def greeting(self):
-        print('Welcome to Tic-Tic-Toe game')
+        print(Fore.GREEN + 'Welcome to Tic-Tic-Toe game')
     
     def instructions(self): 
         # Need to put game rule tomorrow
-        print('Pick the side they want to be on ')
+        print(Style.RESET_ALL + 'Pick the side they want to be on ')
 
     def print_board(self):
          # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
