@@ -18,7 +18,7 @@ class TicTacToe:
 
     def print_board(self):
          # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
-        for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
+        for row in [self.board[i*3:(i + 1)*3] for i in range(3)]:
             # Join row in a string where the separator is this vertical line
             print('| ' + ' | '.join(row) + ' |') 
 
@@ -26,7 +26,7 @@ class TicTacToe:
     @staticmethod
     def print_board_nums():
         # What indices are in the rows for each of the rows like sub array[(0,1,2),(3,4,5),(6,7,8)](just like on the paint board)
-        number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range (3)] 
+        number_board = [[str(i) for i in range(j*3, (j + 1)*3)] for j in range (3)] 
         for row in number_board:
               print('| ' + ' | '.join(row) + ' |')
 
@@ -58,13 +58,13 @@ class TicTacToe:
     def winner(self, square, letter):
         # Check all of 3 in a row anywhere
         row_ind = square // 3 
-        row = self.board[row_ind*3 : (row_ind + 1) * 3]
+        row = self.board[row_ind*3 : (row_ind + 1)*3]
         if all([spot == letter for spot in row]):
             return True
 
         # Check column
         col_ind = square % 3
-        column = [self.board[col_ind+i*3] for i in range(3)]
+        column = [self.board[col_ind + i*3] for i in range(3)]
 
         if all([spot == letter for spot in column]):
             return True
@@ -89,8 +89,8 @@ def play(game, x_player, o_player, print_game=True):
     # Return the winner of the game(the letter)! or None for a tie
     if print_game:
         game.print_board_nums()
-
-    letter = 'X' # Starting letter
+    # Starting letter
+    letter = 'X' 
 
     # Iterate while the game still has empty squares
     # Return the winner name using return statement to break out the loop
