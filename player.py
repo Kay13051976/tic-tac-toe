@@ -3,9 +3,7 @@ import math
 
 # Creates base player class 
 class Player:
-    """
-    Creates an instance of Player
-    """
+    """ Creates an instance of Player """
     def __init__(self, letter): 
        # InputName is the name that the player picks their name
        self.letter = letter
@@ -31,7 +29,7 @@ class HumanPlayer(Player):
         valid_square = False
         valid = None
         while not valid_square:
-            square = input (self.letter + '\'s turn. Input move (0-9):')
+            square = input (self.letter + "\'s turn. Input move (0-9):\n")
             # Check this is a correct value by try to cast
             # It to an integer, and if it's not, then we say its invalid
             # If that spot is not available on the board, print out "invalid" to tell player

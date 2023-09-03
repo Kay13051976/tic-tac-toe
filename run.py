@@ -77,9 +77,7 @@ class TicTacToe:
                 return True
             # If all of these fail
         return False
-
             
-    
 # Define the play function outside the TicTacToe class to passing in a game, an X player, and O player to print out the step to tell player
 def play(game, x_player, o_player, print_game=True): 
     # Return the winner of the game(the letter)! or None for a tie
@@ -87,7 +85,6 @@ def play(game, x_player, o_player, print_game=True):
         game.print_board_nums()
 
     letter = 'X' # Starting letter
-
 
     # Iterate while the game still has empty squares
     # Return the winner name using return statement to break out the loop
@@ -112,7 +109,6 @@ def play(game, x_player, o_player, print_game=True):
             # Switches player
             letter = 'O' if letter == 'X' else 'X' 
 
-
     if print_game:
             print("It's a tie!")
         
@@ -123,5 +119,4 @@ if __name__ == '__main__':
      t = TicTacToe() 
      t.greeting()
      t.instructions()
-
      play(t, x_player, o_player, print_game=True)
