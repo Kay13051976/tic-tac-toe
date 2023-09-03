@@ -6,10 +6,12 @@ class Player:
     """
     Creates an instance of Player
     """
-    def __init__(self, letter): # InputName is the name that the player picks their name
+    def __init__(self, letter): 
+       # InputName is the name that the player picks their name
        self.letter = letter
     
-    def get_move(self, game):  # All the player be able to get their next move 
+    def get_move(self, game):  
+        # All the player be able to get their next move 
         pass
   
 class RandomComputerPlayer(Player):
