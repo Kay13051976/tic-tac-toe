@@ -15,12 +15,12 @@ class TicTacToe:
     
     def instructions(self): 
         # Need to put game rule tomorrow
-        print(Style.RESET_ALL + 'Pick the side they want to be on ')
+        print(Style.RESET_ALL + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players. The human player takes 'X', and the computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns, resulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe first player, 'X', makes the initial move.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe first player to achieve this wins the game.\n ")
 
     def print_board(self):
          # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
         for row in [self.board[i*3:(i + 1)*3] for i in range(3)]:
-            # Join row in a string where the separator is this vertical line
+            # Join row in a string where the separator is this vertical line 
             print('| ' + ' | '.join(row) + ' |') 
 
     # Creates method to print out the number on the board, What number corresponds to what box
@@ -118,7 +118,12 @@ def play(game, x_player, o_player, print_game=True):
 
     if print_game:
             print("It's a tie!")
-        
+# def play_again(): 
+#     print ("Would You Like To Play Again? (Y/N) > " ).upper
+#     if play_again == "Y":
+#         t
+#     else:
+#         print("Good Bye")
 
 if __name__ == '__main__':
      # Import human player nad random computer player from player file on the top of the page 
