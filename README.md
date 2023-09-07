@@ -88,4 +88,34 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
     . HeroKu was used to deploy the project.
 
 
-   
+  ## Bugs
+   . Solved bugs
+
+   . Unsolved bugs
+
+   Testing
+   please refer to the TESTING.MD file for all test related documentation.
+
+# Deployment
+    . The program was deployed to [Heroku]()
+    . The program can be reached by the link [link]()
+
+ ## To deploy the project as an application that can be run locally:
+ Note:
+  1. This project requires you to have Python installed on your local PC:
+   . sudo apt install python3
+  1. You will also need pip installed to allow the installation of modules the application uses.
+   . sudo apt install python3-pip
+  
+Create a local copy of the  Github repository by following one of the two processes below:
+. Download ZIP file:
+  - Go to the GitHub Repo page [link]()
+  - Click the Code button and download the ZIP file containing the project.
+  - Extract the Zip file to a location on your PC.
+. Clone the repository:
+  - Open a folder on your computer with the terminal.
+  - Run the following command
+  [git clone https://]()
+  . Alternatively , if using Gitpod, you can click below to create your own workspace using this repository
+  [link ]()
+    i. Install Python module dependencies:
