@@ -79,5 +79,13 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
      . Simple Terminal Menu was used to implement the menu.
      . Colorama was used to add colors and styles to the project.
 
+    ### OTher Tools:
+    . Gitpod was used as the main tool to write and edit code.
+    . VSCode was used as the plan and practice tool to write and edit code.
+    . Git was used for the version control of the website.
+    . GitHub was used to host the code of the website.
+    . Excel was used to mage a flowchart for the README.md file.
+    . HeroKu was used to deploy the project.
+
 
    
