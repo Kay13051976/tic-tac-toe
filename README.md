@@ -44,6 +44,40 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
  . Sends the side 'X' or 'O' to tell the user'
  ! [image of context to tell user witch side is on]()
  . Show the TicTacToe game board and and context to tell user with side turn and ask user to put number 0-9 then click enter
- ! [image of tictactoe game board page]()
- . the random computer player will pick the number and show context to tell the result the ask user to put number 0-9 again.
+ ! [image of tic tac toe game board page]()
+ . the random computer player will pick the number and show context to tell the result the ask user to put number 0-8 again.
  ! [image of random computer generate the number ]()
+ .  Announcing the Winner:If any winning Combinations appear: Here are the eight possible ways to win:
+  - Three in a row horizontally (across the top, middle, or bottom row).
+  - Three in a row vertically (along the left, center, or right column).
+  - Three in a row diagonally (from the top-left to the bottom-right or from the top-right to the bottom-left).
+  ! [image announcing the winner]()
+  - Ask player to play again by give them two choice Y or N , Y represent Yes, N represent No
+  ! [image]()
+  - when the user type Y the the program will load and start again
+   ! [image]()
+  - when the user type N the the program will print "Good Bye"
+   ! [image]()
+
+   # Flowchart
+   The flowchart represents the logic of the application:
+    ! [flowchart image]()
+
+    # Technologies Used
+     . python3.11.4: used to to anchor the project and direct all application behavior
+     . JavaScript: used to provide the start script needed to run the Code Institute mock terminal in the browser
+     . HTML: used to construction the elements involved in building the mock terminal in the browser
+
+    # Frameworks/Libraries, Programmes and Tools:
+    ### Python module/packages:
+     . random was used to implement pseudo-random number generation
+     . math was used to implement the mathematical operations 
+
+    ### Third-party imports:
+     . NLTK Package was used in order to be able to work with pattern package.
+     . Pattern Package was used to pluralize nouns where it is needed.
+     . Simple Terminal Menu was used to implement the menu.
+     . Colorama was used to add colors and styles to the project.
+
+
+   
