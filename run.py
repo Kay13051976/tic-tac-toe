@@ -124,12 +124,15 @@ def another_game():
             answer = input("Do you want to play again Y/N ?:\n").upper()
             if answer == "N":
                 another_game = False
-                print("Goodbye")
+                print("Thanks for playing the game")
             if answer == "Y":
                 another_game = True
                 print("Welcome back!")
             else:
-                print("Invalid input")
+                print("This is an invalid choice")
+
+def cycle_game():
+
 
 
 
