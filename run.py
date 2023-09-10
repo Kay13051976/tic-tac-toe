@@ -124,10 +124,12 @@ def another_game():
             answer = input("Do you want to play again Y/N ?:\n").upper()
             if answer == "N":
                 another_game = False
+                print("Goodbye")
             if answer == "Y":
                 another_game = True
-if another_game:
-    print("Goodbye")
+                print("Welcome back!")
+            else:
+                print("Invalid input")
 
 
 
@@ -140,4 +142,5 @@ if __name__ == '__main__':
      t.instructions()
      play(t, x_player, o_player, print_game=True)
      another_game()
+     
      
