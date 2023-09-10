@@ -123,7 +123,7 @@ def another_game():
         while answer not in ("Y","N"):
             answer = input("Do you want to play again Y/N ?:\n").upper()
             if answer == "N":
-                another_game = False1
+                another_game = False
             if answer == "Y":
                 another_game = True
 if another_game:
@@ -140,4 +140,4 @@ if __name__ == '__main__':
      t.instructions()
      play(t, x_player, o_player, print_game=True)
      another_game()
-     t = TicTacToe
+     
