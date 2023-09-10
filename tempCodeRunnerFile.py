@@ -1,1 +1,1 @@
-in
+if another_game:

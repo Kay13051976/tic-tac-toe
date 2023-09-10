@@ -118,12 +118,18 @@ def play(game, x_player, o_player, print_game=True):
 
     if print_game:
             print("It's a tie!")
-# def play_again(): 
-#     print ("Would You Like To Play Again? (Y/N) > " ).upper
-#     if play_again == "Y":
-#         t
-#     else:
-#         print("Good Bye")
+def another_game():
+        answer = " "
+        while answer not in ("Y","N"):
+            answer = input("Do you want to play again Y/N ?:\n").upper()
+            if answer == "N":
+                another_game = False1
+            if answer == "Y":
+                another_game = True
+if another_game:
+    print("Goodbye")
+
+
 
 if __name__ == '__main__':
      # Import human player nad random computer player from player file on the top of the page 
@@ -133,3 +139,5 @@ if __name__ == '__main__':
      t.greeting()
      t.instructions()
      play(t, x_player, o_player, print_game=True)
+     another_game()
+     t = TicTacToe
