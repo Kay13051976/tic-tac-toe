@@ -118,32 +118,61 @@ def play(game, x_player, o_player, print_game=True):
 
     if print_game:
             print("It's a tie!")
-def another_game():
-        answer = " "
-        while answer not in ("Y","N"):
-            answer = input("Do you want to play again Y/N ?:\n").upper()
-            if answer == "N":
-                another_game = False
-                print("Thanks for playing the game")
-            if answer == "Y":
-                another_game = True
-                print("Welcome back!")
+# def another_game():
+#         answer = " "
+#         while answer not in ("Y","N"):
+#             answer = input("Do you want to play again Y/N ?:\n").upper()
+#             if answer == "N":
+#                 another_game = False
+#                 print("Thanks for playing the game")
+#             if answer == "Y":
+#                 another_game = True
+#                 print("Welcome back!")
+#             else:
+#                 print("This is an invalid choice")
+
+# def cycle_game():
+# Define a function to get player names and choose "X" or "O"
+def get_player_names():
+    player_names = []
+    for i in range(2):
+        name = input(f"Enter Player {i+1}'s name: \n")
+        while True:
+            choice = input(f"{name}, choose 'X' or 'O': \n").upper()
+            if choice in ['X','O']:
+                break
             else:
-                print("This is an invalid choice")
-
-def cycle_game():
-
-
+                print("Invalid choice. Please choose 'X' or 'O'.")
+        player_names.append((name, choice))
+        return player_names
 
 
 if __name__ == '__main__':
      # Import human player nad random computer player from player file on the top of the page 
      x_player = HumanPlayer('X')
      o_player = RandomComputerPlayer('O')
-     t = TicTacToe() 
-     t.greeting()
-     t.instructions()
-     play(t, x_player, o_player, print_game=True)
-     another_game()
+while True:
+    t = TicTacToe() 
+    t.greeting()
+    t.instructions()
+    player_names = get_player_names()
+    play(t, x_player, o_player, print_game=True)
+    replay = input("Do you want to play again?(Y/N): \n")
+    # answer = " "
+    # while answer not in ("Y","N"):
+    #     answer = input("Do you want to play again Y/N ?:\n").upper()
+    #     if answer == "N":
+    #         another_game = False
+    #         print("Thanks for playing the game")
+    #         break
+    #     if answer == "Y":
+    #         another_game = True
+    #         print("Welcome back!")
+    #     else:
+    #         print("This is an invalid choice")
+    if replay.lower() !="y":
+        print("Thanks for playing the game")
+        break
+
      
      
