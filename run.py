@@ -1,5 +1,6 @@
 from player import HumanPlayer, RandomComputerPlayer
-from colorama import Fore, Style
+from colorama import Fore, Back, Style
+
 
 # Define class TicTacToe and Creates a board
 class TicTacToe:
@@ -11,11 +12,11 @@ class TicTacToe:
         # Create variable self current winner to keep track of wether or not there is a current winner in this game. And if there is who is it?
 
     def greeting(self):
-        print(Fore.GREEN + 'Welcome to Tic-Tic-Toe game')
+        print(Fore.YELLOW + 'Welcome to Tic-Tic-Toe game')
     
     def instructions(self): 
         # Need to put game rule tomorrow
-        print(Style.RESET_ALL + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players. The human player takes 'X', and the computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns, resulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe first player, 'X', makes the initial move.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe first player to achieve this wins the game.\n ")
+        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\ntwo players. The human player takes 'X', and the computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\nresulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe first player, 'X', makes the initial move.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe first player to achieve this wins the game.\nIf random computer player win the game will automatic start again.\nIf human player win you can stop or continue to play")
 
     def print_board(self):
          # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
@@ -110,7 +111,7 @@ def play(game, x_player, o_player, print_game=True):
                 print('') 
             if game.current_winner:
                 if print_game:
-                    print(letter + ' WINS !')
+                    print(Fore.GREEN + letter + ' WINS !')
                 return letter
             # After player made a move, alternate letter
             # Switches player
@@ -131,9 +132,9 @@ if __name__ == '__main__':
     # Create while loop to loop the game 
     answer = " "
     while answer not in ("Y","N"):
-        answer = input("Do you want to play again Y/N ?: \n").upper()
+        answer = input(Style.RESET_ALL + "Do you want to play again Y/N ?: \n").upper()
         if answer == "N":
-            print("Thanks for playing the game")
+            print(Fore.YELLOW + "Thanks for playing the game Goodbye!!!")
             break
         if answer == "Y":
             while True:
@@ -143,7 +144,7 @@ if __name__ == '__main__':
                 play(t, x_player, o_player, print_game=True)
                 replay = input("Do you want to play again?(Y/N): \n")
         else:
-            print("This is an invalid choice")
+            print(Fore.RED + "This is an invalid choice")
    
 
 

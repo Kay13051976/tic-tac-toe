@@ -1,5 +1,7 @@
 import random
 import math
+from colorama import Fore, Back, Style
+
 
 # Creates base player class 
 class Player:
@@ -35,7 +37,7 @@ class HumanPlayer(Player):
 
         while not valid_square:
 
-            square = input (self.letter + "\'s turn. Input move (0-9):\n")
+            square = input (Style.RESET_ALL + self.letter + "\'s turn. Input move (0-9):\n")
             # Check this is a correct value by try to cast
             # It to an integer, and if it's not, then we say its invalid
             # If that spot is not available on the board, print out "invalid" to tell player
@@ -46,7 +48,7 @@ class HumanPlayer(Player):
                 valid_square = True
 
             except ValueError:
-                print('Invalid square. Try again.')
+                print(Fore.RED + 'Invalid square. Try again.')
 
         return val
      
