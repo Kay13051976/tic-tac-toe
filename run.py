@@ -144,7 +144,7 @@ if __name__ == '__main__':
                 play(t, x_player, o_player, print_game=True)
                 replay = input("Do you want to play again?(Y/N): \n")
         else:
-            print(Fore.RED + "This is an invalid choice")
+            print(Fore.RED + "This is an invalid choice.")
    
 
 
