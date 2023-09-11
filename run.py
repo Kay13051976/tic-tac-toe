@@ -128,6 +128,7 @@ if __name__ == '__main__':
     t.greeting()
     t.instructions()
     play(t, x_player, o_player, print_game=True)
+    # Create while loop to loop the game 
     answer = " "
     while answer not in ("Y","N"):
         answer = input("Do you want to play again Y/N ?: \n").upper()
