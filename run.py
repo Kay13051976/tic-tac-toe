@@ -12,11 +12,11 @@ class TicTacToe:
         # Create variable self current winner to keep track of wether or not there is a current winner in this game. And if there is who is it?
 
     def greeting(self):
-        print(Fore.YELLOW + 'Welcome to Tic-Tic-Toe game')
+        print(Fore.YELLOW + 'Welcome to Tic-Tic-Toe GAME!!!')
     
     def instructions(self): 
         # Need to put game rule tomorrow
-        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\ntwo players. The human player takes 'X', and the computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\nresulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe first player, 'X', makes the initial move.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe first player to achieve this wins the game.\nIf random computer player win the game will automatic start again.\nIf human player win you can stop or continue to play")
+        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players. The human player takes 'X', and the random computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\nresulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe human player, 'X', makes the initial move.\nThe random computer player will generate the number to move automatically.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe human player to achieve this wins the game.\nIf random computer player wins the game will automatically start again.\nIf human player wins you can stop or continue to play by enter Y or N.")
 
     def print_board(self):
          # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
