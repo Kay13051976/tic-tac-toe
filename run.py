@@ -1,6 +1,8 @@
+
 from player import HumanPlayer, RandomComputerPlayer
 from colorama import Fore, Back, Style
-
+from simple_term_menu import TerminalMenu
+import numpy as np
 
 # Define class TicTacToe and Creates a board
 class TicTacToe:
@@ -16,13 +18,15 @@ class TicTacToe:
     
     def instructions(self): 
         # Need to put game rule tomorrow
-        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players. The human player takes 'X', and the random computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\nresulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe human player, 'X', makes the initial move.\nThe random computer player will generate the number to move automatically.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe human player to achieve this wins the game.\nYou can stop or continue to play by enter Y or N.")
+        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players. The human player takes 'X', and the random computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\nresulting in a total of nine cells.\nPlayers take turns placing their symbol X or O in any empty cell of the grid\nBy typing the number 0-8 as shown on the first board, each number representing each cell in the board.\nThe human player, 'X', makes the initial move.\nThe random computer player will generate the number to move automatically.\nThe objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\nThe human player to achieve this wins the game.\nYou can stop or continue to play by enter เล่นต่อ or ออกเกม")
 
     def print_board(self):
-         # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
-        for row in [self.board[i*3:(i + 1)*3] for i in range(3)]:
-            # Join row in a string where the separator is this vertical line 
-            print('| ' + ' | '.join(row) + ' |') 
+        # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
+        # for row in [self.board[i*3:(i + 1)*3] for i in range(3)]:
+        # Join row in a string where the separator is this vertical line 
+        formatted_board_lines = ['| ' + ' | '.join(self.board[i*3:(i + 1)*3]) + ' |' for i in range(3)]
+        formatted_board = '\n'.join(formatted_board_lines)
+        print(formatted_board)
 
     # Creates method to print out the number on the board, What number corresponds to what box
     @staticmethod
@@ -122,30 +126,25 @@ def play(game, x_player, o_player, print_game=True):
 
 
 if __name__ == '__main__':
-     # Import human player nad random computer player from player file on the top of the page 
-    x_player = HumanPlayer('X')
-    o_player = RandomComputerPlayer('O')
-    t = TicTacToe() 
-    t.greeting()
-    t.instructions()
-    play(t, x_player, o_player, print_game=True)
-    # Create while loop to loop the game 
-    answer = " "
-    while answer not in ("Y","N"):
-        answer = input(Style.RESET_ALL + "Do you want to play again Y/N ?: \n").upper()
-        if answer == "N":
+    # Import human player nad random computer player from player file to the top of the page first
+    options = ["Play Again", "Quit"]
+
+    while True:
+        x_player = HumanPlayer('X')
+        o_player = RandomComputerPlayer('O')
+        t = TicTacToe() 
+        t.greeting()
+        t.instructions()
+        play(t, x_player, o_player, print_game=True)
+        terminal_menu = TerminalMenu(options)
+        menu_entry_index = terminal_menu.show()
+        if menu_entry_index == 0:
+            print("Play Again")
+            continue
+        else:
             print(Fore.YELLOW + "Thanks for playing the game Goodbye!!!")
             break
-        if answer == "Y":
-            while True:
-                t = TicTacToe() 
-                t.greeting()
-                t.instructions()
-                play(t, x_player, o_player, print_game=True)
-                replay = input("Do you want to play again?(Y/N): \n")
-        else:
-            print(Fore.RED + "This is an invalid choice.")
-   
+
 
 
   
