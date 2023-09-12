@@ -2,7 +2,6 @@
 from player import HumanPlayer, RandomComputerPlayer
 from colorama import Fore, Back, Style
 from simple_term_menu import TerminalMenu
-import numpy as np
 
 # Define class TicTacToe and Creates a board
 class TicTacToe:
