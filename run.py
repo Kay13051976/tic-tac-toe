@@ -32,9 +32,10 @@ class TicTacToe:
     @staticmethod
     def print_board_nums():
         # What indices are in the rows for each of the rows like sub array[(0,1,2),(3,4,5),(6,7,8)](just like on the paint board)
-        number_board = [[str(i) for i in range(j*3, (j + 1)*3)] for j in range (3)] 
-        for row in number_board:
-              print('| ' + ' | '.join(row) + ' |')
+        number_board = [f'{i}' for i in range (9)]
+        number_board = [number_board[i:i+3] for i  in range(0, 9, 3)] 
+        for row in number_board: 
+            print('| ' + ' | '.join(row) + ' |')
 
     # Create available moves method to tell player what are the available moves after they make a move
     def available_moves(self):
