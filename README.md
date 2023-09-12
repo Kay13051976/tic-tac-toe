@@ -36,27 +36,34 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
 
 # Features
  . When the program is loaded. The user can see a welcome message that engages them to start playing and instructions describing the game and how to play it.
-. Show the TicTacToe first game board, which has a number in each cell and context to tell the user with a side turn and ask the user to put numbers 0-8.
+ . underneath the instruction will show the TicTacToe first game board, which has a number in each cell and context to tell the user with a side turn and ask the user to put numbers 0-8.
 ![image of loaded page](documentation/loading_page.png)
-
- ! [image of tic tac toe game board page]()
- . the random computer player will pick the number and show context to tell the result the ask user to put number 0-8 again.
- ! [image of random computer generate the number ]()
+. The user enters the numbers 0-8, and the program will display the game board of the result of two plays between the user(human player) and a random computer player.
+ . The random computer player will generate to pick the number automatically, then print context to ask the user to add numbers 0-8 again.
+ ![image of print context to ask the user to add number again ](documentation/ask_player_to_add_number.png)
  .  Announcing the Winner:If any winning Combinations appear: Here are the eight possible ways to win:
   - Three in a row horizontally (across the top, middle, or bottom row).
   - Three in a row vertically (along the left, center, or right column).
   - Three in a row diagonally (from the top-left to the bottom-right or from the top-right to the bottom-left).
-  ! [image announcing the winner]()
-  - Ask player to play again by give them two choice Y or N , Y represent Yes, N represent No
-  ! [image]()
-  - when the user type Y the the program will load and start again
-   ! [image]()
-  - when the user type N the the program will print "Good Bye"
-   ! [image]()
+
+  ![image announcing the X winner ](documentation/announce_the_winner.png)
+   ![image announcing the O winner](documentation/announce_o_winner.png)
+  ![image announcing the tie game](documentation/announce_o_winner.png)
+
+  - Ask player to play again by give them simple men(Play Again and Quit) selecting a simple menu using the arrow up and down to enter Play Again or Quit. 
+  ![image simple menu play again or quit](documentation/simple_menu_play_again_or_quit.png)
+
+  - when the user moves arrow to play again and click enter, the program will load and start again.
+  
+   ![image the program load first game board again](documentation/load_again_first_game_board.png)
+
+  - when the user moves arrow to quit and click enter, the program will announce "Thanks for playing the game Goodbye!!!".
+   ![image](documentation/goodbye_text.png)
 
    # Flowchart
    The flowchart represents the logic of the application:
-    ! [flowchart image]()
+
+    ![flowchart image](documentation/flowchart_tactactoe.png)
 
     # Technologies Used
      . python3.11.4: used to to anchor the project and direct all application behavior
@@ -65,26 +72,24 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
 
     # Frameworks/Libraries, Programmes and Tools:
     ### Python module/packages:
-     . random was used to implement pseudo-random number generation
-     . math was used to implement the mathematical operations 
+     . random was used to implement pseudo-random number generation.
+     . math was used to implement the mathematical operations.
+     . os was used to clear the terminal before running the program.
 
     ### Third-party imports:
-     . NLTK Package was used in order to be able to work with pattern package.
-     . Pattern Package was used to pluralize nouns where it is needed.
      . Simple Terminal Menu was used to implement the menu.
      . Colorama was used to add colors and styles to the project.
+     . Simple term menu was use to create simple menu to ask user to play again or quit.
 
     ### OTher Tools:
     . Gitpod was used as the main tool to write and edit code.
     . VSCode was used as the plan and practice tool to write and edit code.
     . Git was used for the version control of the website.
     . GitHub was used to host the code of the website.
-    . Excel was used to mage a flowchart for the README.md file.
+    . Excel was used to image a flowchart for the README.md file.
     . HeroKu was used to deploy the project.
-
-
   ## Bugs
-   . Solved bugs
+   . Solved bugs 
 
    . Unsolved bugs
 
