@@ -17,11 +17,10 @@ class TicTacToe:
     
     def instructions(self): 
         # Need to put game rule tomorrow
-        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players. The human player takes 'X', and the random computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\ resulting in a total of nine cells.\n- Players take turns placing their symbol X or O in any empty cell of the grid by typing the number 0-8 as shown on the first board\n- Each number representing each cell in the board.\n- The human player, 'X', makes the initial move.\n- The random computer player will generate the number to move automatically.\n- The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\n- The human player to achieve this wins the game.\n- You can stop or continue to play by selecting a simple menu using the arrow up and down to enter Play Again or Quit" )
+        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players, human player takes 'X', and random computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\ resulting in a total of nine cells.\n- Players take turns placing their symbol X or O in any empty cell of the grid by typing the number 0-8 as shown on the first board.\n- Each number representing each cell in the board.\n- The human player 'X' makes the initial move.\n- The random computer player will generate the number to move automatically.\n- The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\n- The human player to achieve this wins the game.\n- You can stop or continue to play by selecting a simple menu using the arrow up and down to enter Play Again or Quit." )
 
     def print_board(self):
         # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
-        # for row in [self.board[i*3:(i + 1)*3] for i in range(3)]:
         # Join row in a string where the separator is this vertical line 
         formatted_board_lines = ['| ' + ' | '.join(self.board[i*3:(i + 1)*3]) + ' |' for i in range(3)]
         formatted_board = '\n'.join(formatted_board_lines)
