@@ -24,77 +24,98 @@ Remember that Tic-Tac-Toe is a game with a limited number of possible moves, and
 # User Stories
 
 ## First Time Visitor Goals:
- . As a first-time visitor, I want to quickly understand the program's primary purpose so that I can learn more about this program.
- . As a first-time visitor, I want to navigate the program quickly to find clear instructions and content about playing the game.
- . As a first-time visitor, I must provide a well-designed tutorial or onboarding process to ensure new users enjoy the game with clarity.
- . As a first-time visitor, I want to be able to find a straightforward way to initiate their first game and start a new game when the game is over
- . As a first-time visitor, I want to find a helpful program to fulfil my Expectations.
-  . As a first-time visitor, I want to see different text colors so I easily read the story.
+  - As a first-time visitor, I want to quickly understand the program's primary purpose so that I can learn more about this program.
+  - As a first-time visitor, I want to navigate the program quickly to find clear instructions and content about playing the game.
+  - As a first-time visitor, I must provide a well-designed tutorial or onboarding process to ensure new users enjoy the game with clarity.
+  - As a first-time visitor, I want to be able to find a straightforward way to initiate their first game and start a new game when the game is over
+ - As a first-time visitor, I want to find a helpful program to fulfil my Expectations.
+ - As a first-time visitor, I want to see different text colors so I easily read the story.
 
 ## Frequent Visitor Goals:
-  . As a Frequent User, I want the option to customize the game's settings, such as board size and difficulty level, and pick a side to play to tailor the game to my preferences and challenge myself with different variations. ( Future improvement)
+  - As a Frequent User, I want the option to customize the game's settings, such as board size and difficulty level, and pick a side to play to tailor the game to my preferences and challenge myself with different variations. ( Future improvement)
 
 # Features
- . When the program is loaded. The user can see a welcome message that engages them to start playing and instructions describing the game and how to play it.
- . underneath the instruction will show the TicTacToe first game board, which has a number in each cell and context to tell the user with a side turn and ask the user to put numbers 0-8.
+- When the program is loaded. The user can see a welcome message that engages them to start playing and instructions describing the game and how to play it.
+- Underneath the instruction will show the TicTacToe first game board, which has a number 0-8 in each cell and context to tell the user with a side turn and ask the user to put numbers 0-8.
 ![image of loaded page](documentation/loading_page.png)
-. The user enters the numbers 0-8, and the program will display the game board of the result of two plays between the user(human player) and a random computer player.
- . The random computer player will generate to pick the number automatically, then print context to ask the user to add numbers 0-8 again.
- ![image of print context to ask the user to add number again ](documentation/ask_player_to_add_number.png)
- .  Announcing the Winner:If any winning Combinations appear: Here are the eight possible ways to win:
-  - Three in a row horizontally (across the top, middle, or bottom row).
-  - Three in a row vertically (along the left, center, or right column).
-  - Three in a row diagonally (from the top-left to the bottom-right or from the top-right to the bottom-left).
+- The user enters the numbers 0-8, and the program will display the game board of the result of two plays between the user(human player) and a random computer player.
+- The random computer player will generate to pick the number automatically, then print context to ask the user to add numbers 0-8 again.
+![image of print context to ask the user to add number again](documentation/ask_player_to_add_number.png)
 
-  ![image announcing the X winner ](documentation/announce_the_winner.png)
-   ![image announcing the O winner](documentation/announce_o_winner.png)
-  ![image announcing the tie game](documentation/announce_o_winner.png)
+- If the user puts the number less than 0, then it will print out a warning that it is an invalid number and tell who turns and puts move(number) again
 
-  - Ask player to play again by give them simple men(Play Again and Quit) selecting a simple menu using the arrow up and down to enter Play Again or Quit. 
-  ![image simple menu play again or quit](documentation/simple_menu_play_again_or_quit.png)
+ ![image warning invalid less than number](documentation/invalid-warning-less_number.png)
 
-  - when the user moves arrow to play again and click enter, the program will load and start again.
+- If the user puts the number greater than 8, then it will print out a warning that it is an invalid number and tell who turns and puts move(number) again
+
+  ![image warning invalid greater than number](documentation/invalid_warning_greater_number.png)
+
+- If the user enters the correct number, it will continue to play
+  ![image of continue to play when correct number1](documentation/carry_on_play_if_correct_number.png)
+
+    ![image of continue to play when correct number2](documentation/carry_on_playing_if_correct_number.png)
+
+- Announcing the Winner: If any winning Combinations appear: Here are the eight possible ways to win:
+    - Three in a row horizontally (across the top, middle, or bottom row).
+     ![image row horizontally winning](documentation/row_horizontally_winner.png)
+    - Three in a row vertically (along the left, center, or right column).
+     ![image of row vertically winning](documentation/row_vertically_winning.png)
+    - Three in a row diagonally (from the top-left to the bottom-right or from the top-right to the bottom-left).
+     ![image of row diagonally winning](documentation/row_diagonally_winning.png)
+- Announce the winner, either X or O and show the user a simple menu to pick whether they want to play again or not.
+  ![image of announcing the X winner](documentation/announce_x_winner.png)
+  ![image of announcing the O winner](documentation/announce_o_winner.png)
+
+- Announcing the game is tie: If no winning combinations appear.
+
+  ![image of announcing the tie game](documentation/announce_tie_game.png)
+
+- Ask player to play again by give them simple menu(Play Again and Quit) selecting a simple menu using the arrow up and down to enter Play Again or Quit. 
+
+  ![image of simple menu play again or quit](documentation/simple_menu_play_again_or_quit.png)
+
+- When the user moves arrow to play again and click enter, the program will load and start again.
   
-   ![image the program load first game board again](documentation/load_again_first_game_board.png)
+   ![image of the program load first game board again](documentation/load_again_first_game_board.png)
 
-  - when the user moves arrow to quit and click enter, the program will announce "Thanks for playing the game Goodbye!!!".
+- When the user moves arrow to quit and click enter, the program will announce "Thanks for playing the game Goodbye!!!".
    ![image](documentation/goodbye_text.png)
 
-   # Flowchart
-   The flowchart represents the logic of the application:
+# Flowchart
+The flowchart represents the logic of the application:
 
-    ![flowchart image](documentation/flowchart_tactactoe.png)
+![flowchart image](documentation/flowchart_tactactoe.png)
 
-    # Technologies Used
-     . python3.11.4: used to to anchor the project and direct all application behavior
-     . JavaScript: used to provide the start script needed to run the Code Institute mock terminal in the browser
-     . HTML: used to construction the elements involved in building the mock terminal in the browser
+# Technologies Used
+  - python3.11.4: used to to anchor the project and direct all application behavior
+  - JavaScript: used to provide the start script needed to run the Code Institute mock terminal in the browser
+  - HTML: used to construction the elements involved in building the mock terminal in the browser
 
-    # Frameworks/Libraries, Programmes and Tools:
-    ### Python module/packages:
-     . random was used to implement pseudo-random number generation.
-     . math was used to implement the mathematical operations.
-     . os was used to clear the terminal before running the program.
+# Frameworks/Libraries, Programmes and Tools:
+### Python module/packages:
+  - random was used to implement pseudo-random number generation.
+  - math was used to implement the mathematical operations.
+  - os was used to clear the terminal before running the program.
 
-    ### Third-party imports:
-     . Simple Terminal Menu was used to implement the menu.
-     . Colorama was used to add colors and styles to the project.
-     . Simple term menu was use to create simple menu to ask user to play again or quit.
+### Third-party imports:
+  - Simple Terminal Menu was used to implement the menu.
+  - Colorama was used to add colors and styles to the project.
+  - Simple term menu was use to create simple menu to ask user to play again or quit.
 
-    ### OTher Tools:
-    . Gitpod was used as the main tool to write and edit code.
-    . VSCode was used as the plan and practice tool to write and edit code.
-    . Git was used for the version control of the website.
-    . GitHub was used to host the code of the website.
-    . Excel was used to image a flowchart for the README.md file.
-    . HeroKu was used to deploy the project.
+### OTher Tools:
+  - Gitpod was used as the main tool to write and edit code.
+  - VSCode was used as the plan and practice tool to write and edit code.
+  - Git was used for the version control of the website.
+  - GitHub was used to host the code of the website.
+  - Excel was used to image a flowchart for the README.md file.
+  - HeroKu was used to deploy the project.
   ## Bugs
-   . Solved bugs 
+   - Solved bugs 
+  The TicTacToe game does not loop because it places the while loop method in the wrong position. The while loop method has been placed in the bottle of the run.py page to make it work.
 
-   . Unsolved bugs
-
-   Testing
-   please refer to the TESTING.MD file for all test related documentation.
+   - Unsolved bugs
+  none
+  # Testing
 
 # Deployment
     . The program was deployed to [Heroku]()
