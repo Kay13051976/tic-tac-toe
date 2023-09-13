@@ -115,28 +115,39 @@ The flowchart represents the logic of the application:
 
    - Unsolved bugs
   none
-  # Testing
 
 # Deployment
-    . The program was deployed to [Heroku]()
-    . The program can be reached by the link [link]()
+  - The program was deployed to [Heroku Link](https://dashboard.heroku.com/apps/tic-tac-toe-game-by-wanwisa/deploy/github)
+  - The program can be reached by the link [Link To Play Game](https://tic-tac-toe-game-by-wanwisa-f2dfdd0abd2a.herokuapp.com/)
 
  ## To deploy the project as an application that can be run locally:
  Note:
-  1. This project requires you to have Python installed on your local PC:
-   . sudo apt install python3
+  1. This project requires you to have Python and nodeJS installed on your local PC:
+    - sudo apt install python3
   1. You will also need pip installed to allow the installation of modules the application uses.
-   . sudo apt install python3-pip
+    - sudo apt install python3-pip
   
-Create a local copy of the  Github repository by following one of the two processes below:
-. Download ZIP file:
-  - Go to the GitHub Repo page [link]()
-  - Click the Code button and download the ZIP file containing the project.
-  - Extract the Zip file to a location on your PC.
-. Clone the repository:
-  - Open a folder on your computer with the terminal.
-  - Run the following command
-  [git clone https://]()
-  . Alternatively , if using Gitpod, you can click below to create your own workspace using this repository
-  [link ]()
-    i. Install Python module dependencies:
+Create a local copy of the GitHub repository by following one of the two processes below:
+  - Download ZIP file:
+    - Go to the GitHub Repo page [GitHub Page Link](https://github.com/Kay13051976/tic-tac-toe)
+    - Click the Code button and download the ZIP file containing the project.
+    - Extract the Zip file to a location on your PC.
+  - Clone the repository:
+    - Open a folder on your computer with the terminal.
+    - Run the following command
+      - https://github.com/Kay13051976/tic-tac-toe.git
+  - Alternatively, if using Gitpod, you can click below to create your own workspace using this repository
+    - [Gitpod Link](https://gitpod.io/new/#https://github.com/Kay13051976/tic-tac-toe)
+       i. Install Python module dependencies:
+       - Run the command pip install
+         - pip3 install colorama
+         - Or you can follow the link underneath
+           [python colorama link](https://pypi.org/project/colorama/)
+         - pip3 install simple term menu
+         - Or you can follow the link underneath
+            [simple term menu](https://pypi.org/project/simple-term-menu/)
+
+### The app was initially deployed to Heroku then moved to Render if Heroku has remove its free tier service
+
+# To deploy the project to Heroku so it can ve run as a remote web application:
+  - colne the repository:
