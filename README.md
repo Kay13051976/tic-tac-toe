@@ -156,7 +156,53 @@ Create a local copy of the GitHub repository by following one of the two process
       - https://github.com/Kay13051976/tic-tac-toe.git
     - Run the command git remote set-url origin <Your GitHub Repo Path> to set the remote repository location to your repository
     - Push the files to your repository with the following command: git push 
-    - Create a Heroku account if your don't already have one here [Heroku](https://signup.heroku.com/).
+    - Create a Heroku account if your don't already have one
+
+    here [Heroku](https://signup.heroku.com/)
+
     - Create a new Heroku application on the following page here 
-    [New Heroku App]()
+
+    [New Heroku App](documentation/heroku_create_new_app.png)
+
     - Go to the deploy tab:
+
+    ![Heroku deploy tab](documentation/heroku_deploy_tab.png)
+
+    - Search your GitHub repository name.
+
+    ![Searching bar to fine repo name](documentation/chearch_github_name.png)
+     
+     - Link your GitHub account and connect the application to the repository you created.
+
+     ![Connect github account to heroku applicatin](documentation/link_github_account_to_heroku.png)
+
+     - Go to the setting tab.
+
+     ![setting tab](documentation/setting_tab.png)
+
+     - Add python and nodejs to buildpacks.
+
+     ![python and nodejs buildpacks](documentation/add_python_nodejs.png)
+
+     - Go Back to deploy tab.
+     ![Heroku deploy tab](documentation/heroku_deploy_tab.png)
+
+     - Click Deploy Branch.
+
+     ![Deploy branch](documentation/deploy_branch.png)
+    
+     - Wait for the completion of the deployment.
+
+     ![Wait for deploy branch](documentation/wait_for_deploy_branch.png)
+
+     - To check the deployment completion Get back to the dashboard and select the application name you want to open.
+
+     ![Heroku dashboard](documentation/heroku_dashboard.png)
+
+     - Click the application name to check how it work you will see that application dashboard. Click Open app.
+
+     ![Application dashboard](documentation/application_dashboard.png)
+
+    - You will see the welcome first page display on the screen if everything been complete.
+
+    ![Welcome tictactoe first page](documentation/welcome_tictactoe_fiest_page.png)
