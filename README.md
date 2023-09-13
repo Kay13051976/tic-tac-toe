@@ -206,3 +206,13 @@ Create a local copy of the GitHub repository by following one of the two process
     - You will see the welcome first page display on the screen if everything been complete.
 
     ![Welcome tictactoe first page](documentation/welcome_tictactoe_fiest_page.png)
+
+  # Credits
+    - Color formatting: Colorama.
+    - Terminal menu: Sample Term Menu.
+
+  # Acknowledgements
+
+    - I am enormously thankful to my mentor Julia Konovalova for her guidance and valuable feedback.
+    - Code Institute tutor and Slack community members for their support and help.
+    - Boat with an python comprehension explanation through the zoom meeting application.
