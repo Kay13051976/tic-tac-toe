@@ -142,12 +142,21 @@ Create a local copy of the GitHub repository by following one of the two process
        - Run the command pip install
          - pip3 install colorama
          - Or you can follow the link underneath
-           [python colorama link](https://pypi.org/project/colorama/)
+           [python package library colorama link](https://pypi.org/project/colorama/)
          - pip3 install simple term menu
          - Or you can follow the link underneath
-            [simple term menu](https://pypi.org/project/simple-term-menu/)
+            [python package library simple term menu link](https://pypi.org/project/simple-term-menu/)
 
 ### The app was initially deployed to Heroku then moved to Render if Heroku has remove its free tier service
 
 # To deploy the project to Heroku so it can ve run as a remote web application:
-  - colne the repository:
+  - Clone the repository:
+    - Open the folder on your computer with the terminal.
+    - Run the following command 
+      - https://github.com/Kay13051976/tic-tac-toe.git
+    - Run the command git remote set-url origin <Your GitHub Repo Path> to set the remote repository location to your repository
+    - Push the files to your repository with the following command: git push 
+    - Create a Heroku account if your don't already have one here [Heroku](https://signup.heroku.com/).
+    - Create a new Heroku application on the following page here 
+    [New Heroku App]()
+    - Go to the deploy tab:
