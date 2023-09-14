@@ -5,17 +5,30 @@ from simple_term_menu import TerminalMenu
 class TicTacToe:
     """ Define class TicTacToe and Creates a board """
     def __init__(self): 
-        # Use a list of length nine to represent 3x3 board then assign an index in this length nine list to each of the spaces
+        """ Use a list of length nine to represent 3x3 board then assign an 
+        index in this length nine list to each of the spaces """
         self.board = [' ' for _ in range(9)]
-        self.current_winner = None 
         # Create variable self current winner to keep track of wether or not there is a current winner in this game. And if there is who is it?
+        self.current_winner = None 
 
     def greeting(self):
         print(Fore.YELLOW + 'Welcome to Tic-Tic-Toe GAME!!!')
     
     def instructions(self): 
-        # Need to put game rule tomorrow
-        print(Fore.BLUE + "Here are step-by-step how to play Tic-Tac-Toe.\nTwo players, human player takes 'X', and random computer player takes 'O'.\nIn with an empty three multiply three grid. This grid consists of three rows and three columns,\ resulting in a total of nine cells.\n- Players take turns placing their symbol X or O in any empty cell of the grid by typing the number 0-8 as shown on the first board.\n- Each number representing each cell in the board.\n- The human player 'X' makes the initial move.\n- The random computer player will generate the number to move automatically.\n- The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.\n- The human player to achieve this wins the game.\n- You can stop or continue to play by selecting a simple menu using the arrow up and down to enter Play Again or Quit." )
+        """ instruction method to explain rule """
+        print(f"""{Fore.BLUE}Here are step-by-step how to play Tic-Tac-Toe.
+        Two players, human player takes 'X', and random computer player takes 'O'.
+        In with an empty three multiply three grid. This grid consists of three rows and three columns,
+        resulting in a total of nine cells.
+        - Players take turns placing their symbol X or O in any empty cell of the grid 
+          by typing the number 0-8 as shown on the first board.
+        - Each number representing each cell in the board.
+        - The human player 'X' makes the initial move.
+        - The random computer player will generate the number to move automatically.
+        - The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.
+        - The human player to achieve this wins the game.
+        - You can stop or continue to play by selecting a simple menu using the arrow up and down 
+          to enter Play Again or Quit.""" )
 
     def print_board(self):
         # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
