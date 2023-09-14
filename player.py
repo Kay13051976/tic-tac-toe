@@ -2,8 +2,6 @@ import random
 import math
 from colorama import Fore, Back, Style
 
-
-# Creates base player class 
 class Player:
     """ Creates an instance of Player """
     def __init__(self, letter): 
@@ -14,7 +12,6 @@ class Player:
         # All the player be able to get their next move 
         pass
   
-
 class RandomComputerPlayer(Player):
 
     def __init__(self, letter):
@@ -25,7 +22,6 @@ class RandomComputerPlayer(Player):
       square = random.choice(game.available_moves())
       return square
     
-
 class HumanPlayer(Player):
 
     def __init__(self, letter):
@@ -38,24 +34,15 @@ class HumanPlayer(Player):
         while not valid_square:
 
             square = input (Style.RESET_ALL + self.letter + "\'s turn. Input move (0-8):\n")
-            # Check this is a correct value by try to cast
-            # It to an integer, and if it's not, then we say its invalid
-            # If that spot is not available on the board, print out "invalid" to tell player
             try: 
+                # Check this is a correct value by try to cast
                 val = int(square)
                 if val not in game.available_moves():
                     raise ValueError
                 valid_square = True
 
             except ValueError:
+                # If that spot is not available on the board, print out "invalid" to tell player
                 print(Fore.RED + 'Invalid square. Try again.')
 
         return val
-     
-      
-    
-    
-    
-    
-
-  
