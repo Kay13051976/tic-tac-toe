@@ -141,10 +141,3 @@ if __name__ == '__main__':
         else:
             print(Fore.YELLOW + "Thanks for playing the game Goodbye!!!")
             break
-
-
-
-  
-
-     
-     
