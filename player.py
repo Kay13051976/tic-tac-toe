@@ -5,11 +5,11 @@ from colorama import Fore, Back, Style
 class Player:
     """ Creates an instance of Player """
     def __init__(self, letter): 
-       # letter is the name that the player picks their name
+       """ letter is the name that the player picks their name """
        self.letter = letter
     
     def get_move(self, game):  
-        # All the player be able to get their next move 
+        """ All the player be able to get their next move """
         pass
   
 class RandomComputerPlayer(Player):
