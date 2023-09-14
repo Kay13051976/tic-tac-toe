@@ -13,7 +13,7 @@ class Player:
         pass
   
 class RandomComputerPlayer(Player):
-
+    """ represent random computer player """
     def __init__(self, letter):
         super().__init__(letter)
         
@@ -23,7 +23,7 @@ class RandomComputerPlayer(Player):
       return square
     
 class HumanPlayer(Player):
-
+    """ represent human player """
     def __init__(self, letter):
         super().__init__(letter)
         
@@ -43,6 +43,11 @@ class HumanPlayer(Player):
 
             except ValueError:
                 # If that spot is not available on the board, print out "invalid" to tell player
-                print(Fore.RED + 'Invalid square. Try again.')
+                if val < 0:
+                    print(Fore.RED + 'Invalid space number: You can only enter the number range 0-8. Try again.')
+                elif val > 8:
+                    print(Fore.RED + 'Invalid space number: You can only enter the number range 0-8. Try again.')
+                else:   
+                    print(Fore.RED + 'Invalid square number: This space has been occupied. You can only enter the number range 0-8. Try again.')
 
         return val

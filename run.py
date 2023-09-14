@@ -1,11 +1,9 @@
-
 from player import HumanPlayer, RandomComputerPlayer
 from colorama import Fore, Back, Style
 from simple_term_menu import TerminalMenu
 
-# Define class TicTacToe and Creates a board
 class TicTacToe:
-
+    """ Define class TicTacToe and Creates a board """
     def __init__(self): 
         # Use a list of length nine to represent 3x3 board then assign an index in this length nine list to each of the spaces
         self.board = [' ' for _ in range(9)]
