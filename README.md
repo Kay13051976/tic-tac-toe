@@ -158,54 +158,54 @@ Create a local copy of the GitHub repository by following one of the two process
     - Push the files to your repository with the following command: git push 
     - Create a Heroku account if you don't already have one
 
-    here [Heroku](https://signup.heroku.com/)
+      here [Heroku](https://signup.heroku.com/)
 
     - Create a new Heroku application on the following page here 
 
-    [New Heroku App](documentation/heroku_create_new_app.png)
+      [New Heroku App](documentation/heroku_create_new_app.png)
 
     - Go to the deploy tab:
 
-    ![Heroku deploy tab](documentation/heroku_deploy_tab.png)
+      ![Heroku deploy tab](documentation/heroku_deploy_tab.png)
 
     - Search your GitHub repository name.
 
-    ![Searching bar to fine repo name](documentation/chearch_github_name.png)
+      ![Searching bar to fine repo name](documentation/chearch_github_name.png)
      
      - Link your GitHub account and connect the application to your created  repository.
 
-     ![Connect github account to heroku applicatin](documentation/link_github_account_to_heroku.png)
+       ![Connect github account to heroku applicatin](documentation/link_github_account_to_heroku.png)
 
      - Go to the setting tab.
 
-     ![setting tab](documentation/setting_tab.png)
+       ![setting tab](documentation/setting_tab.png)
 
      - Add python and nodejs to buildpacks.
 
-     ![python and nodejs buildpacks](documentation/add_python_nodejs.png)
+       ![python and nodejs buildpacks](documentation/add_python_nodejs.png)
 
      - Go Back to deploy tab.
-     ![Heroku deploy tab](documentation/heroku_deploy_tab.png)
+      ![Heroku deploy tab](documentation/heroku_deploy_tab.png)
 
      - Click Deploy Branch.
 
-     ![Deploy branch](documentation/deploy_branch.png)
+       ![Deploy branch](documentation/deploy_branch.png)
     
      - Wait for the completion of the deployment.
 
-     ![Wait for deploy branch](documentation/wait_for_deploy_branch.png)
+       ![Wait for deploy branch](documentation/wait_for_deploy_branch.png)
 
      - To check the deployment completion, Get back to the dashboard and select the application name you want to open.
 
-     ![Heroku dashboard](documentation/heroku_dashboard.png)
+       ![Heroku dashboard](documentation/heroku_dashboard.png)
 
      - Click the application name to check how it work.  You will see that application dashboard. Click Open app.
 
-     ![Application dashboard](documentation/application_dashboard.png)
+       ![Application dashboard](documentation/application_dashboard.png)
 
     - You will see the welcome first-page display on the screen if everything has been completed.
 
-    ![Welcome tictactoe first page](documentation/welcome_tictactoe_fiest_page.png)
+      ![Welcome tictactoe first page](documentation/welcome_tictactoe_fiest_page.png)
 
   # Credits
     - Color formatting: Colorama.
