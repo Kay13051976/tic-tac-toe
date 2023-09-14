@@ -31,8 +31,7 @@ class TicTacToe:
           to enter Play Again or Quit.""" )
 
     def print_board(self):
-        # Represent three rows by group the number in length nine to three group[(0,1,2),(3,4,5),(6,7,8)]
-        # Join row in a string where the separator is this vertical line 
+        """ print board method to print out the first board """
         formatted_board_lines = ['| ' + ' | '.join(self.board[i*3:(i + 1)*3]) + ' |' for i in range(3)]
         formatted_board = '\n'.join(formatted_board_lines)
         print(formatted_board)
