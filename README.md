@@ -102,7 +102,7 @@ The flowchart represents the logic of the application:
   - Colorama was used to add colors and styles to the project.
   - Simple term menu was use to create simple menu to ask user to play again or quit.
 
-### OTher Tools:
+###  OTher Tools:
   - Gitpod was used as the main tool to write and edit code.
   - VSCode was used as the plan and practice tool to write and edit code.
   - Git was used for the version control of the website.
@@ -136,7 +136,7 @@ Create a local copy of the GitHub repository by following one of the two process
     - Open a folder on your computer with the terminal.
     - Run the following command
       - https://github.com/Kay13051976/tic-tac-toe.git
-  - Alternatively, if using Gitpod, you can click below to create your own workspace using this repository
+  - Alternatively, if using Gitpod, you can click below to create your workspace using this repository
     - [Gitpod Link](https://gitpod.io/new/#https://github.com/Kay13051976/tic-tac-toe)
        i. Install Python module dependencies:
        - Run the command pip install
@@ -156,7 +156,7 @@ Create a local copy of the GitHub repository by following one of the two process
       - https://github.com/Kay13051976/tic-tac-toe.git
     - Run the command git remote set-url origin <Your GitHub Repo Path> to set the remote repository location to your repository
     - Push the files to your repository with the following command: git push 
-    - Create a Heroku account if your don't already have one
+    - Create a Heroku account if you don't already have one
 
     here [Heroku](https://signup.heroku.com/)
 
@@ -172,7 +172,7 @@ Create a local copy of the GitHub repository by following one of the two process
 
     ![Searching bar to fine repo name](documentation/chearch_github_name.png)
      
-     - Link your GitHub account and connect the application to the repository you created.
+     - Link your GitHub account and connect the application to your created  repository.
 
      ![Connect github account to heroku applicatin](documentation/link_github_account_to_heroku.png)
 
@@ -195,15 +195,15 @@ Create a local copy of the GitHub repository by following one of the two process
 
      ![Wait for deploy branch](documentation/wait_for_deploy_branch.png)
 
-     - To check the deployment completion Get back to the dashboard and select the application name you want to open.
+     - To check the deployment completion, Get back to the dashboard and select the application name you want to open.
 
      ![Heroku dashboard](documentation/heroku_dashboard.png)
 
-     - Click the application name to check how it work you will see that application dashboard. Click Open app.
+     - Click the application name to check how it work.  You will see that application dashboard. Click Open app.
 
      ![Application dashboard](documentation/application_dashboard.png)
 
-    - You will see the welcome first page display on the screen if everything been complete.
+    - You will see the welcome first-page display on the screen if everything has been completed.
 
     ![Welcome tictactoe first page](documentation/welcome_tictactoe_fiest_page.png)
 
@@ -213,6 +213,6 @@ Create a local copy of the GitHub repository by following one of the two process
 
   # Acknowledgements
 
-    - I am enormously thankful to my mentor Julia Konovalova for her guidance and valuable feedback.
+    - I am enormously thankful to my mentor Julia Konovalova, for her guidance and valuable feedback.
     - Code Institute tutor and Slack community members for their support and help.
-    - Boat with an python comprehension explanation through the zoom meeting application.
+    - Boat with a python comprehension explanation through the Zoom meeting application.
