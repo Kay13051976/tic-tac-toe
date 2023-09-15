@@ -6,8 +6,10 @@ from player import HumanPlayer, RandomComputerPlayer
 class TicTacToe:
     """ Define class TicTacToe and Creates a board """
     def __init__(self):
-        """ Use a list of length nine to represent 3x3 board then assign an
-        index in this length nine list to each of the spaces """
+        """
+        Use a list of length nine to represent 3x3 board then assign an
+        index in this length nine list to each of the spaces
+        """
         self.board = [' ' for _ in range(9)]
         # Create variable self current winner to keep track of wether or not
         # there is a current winner in this game. And if there is who is it?
@@ -46,16 +48,20 @@ resulting in a total of nine cells.
 
     @staticmethod
     def print_board_nums():
-        """ Creates method to print out the number
-        # on the board(What number corresponds to what box) """
+        """
+        Creates method to print out the number
+        on the board(What number corresponds to what box)
+        """
         number_board = [f'{i}' for i in range(9)]
         number_board = [number_board[i:i+3] for i in range(0, 9, 3)]
         for row in number_board:
             print('| ' + ' | '.join(row) + ' |')
 
     def available_moves(self):
-        """ This method to create available moves
-        (to tell player what are the available moves after they make a move """
+        """
+        This method to create available moves
+        (to tell player what are the available moves after they make a move
+        """
         moves = []
         for (i, spot) in enumerate(self.board):
             if spot == ' ':
@@ -69,8 +75,10 @@ resulting in a total of nine cells.
         return self.board.count(' ')
 
     def make_move(self, square, letter):
-        """ if valid move this method will assign square to letter
-        then make a move then return true if invalid return false"""
+        """
+        if valid move this method will assign square to letter
+        then make a move then return true if invalid return false
+        """
         if self.board[square] == ' ':
             self.board[square] = letter
             if self.winner(square, letter):
@@ -109,8 +117,10 @@ resulting in a total of nine cells.
 
 
 def play(game, x_player, o_player, print_game=True):
-    """ Define the play function outside the TicTacToe class to passing in
-    a game, an X player, and O player to print out the step to tell player """
+    """
+    Define the play function outside the TicTacToe class to passing in
+    a game, an X player, and O player to print out the step to tell player
+    """
     # Return the winner of the game(the letter)! or None for a tie
     if print_game:
         game.print_board_nums()
