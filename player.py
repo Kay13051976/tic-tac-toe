@@ -44,10 +44,10 @@ class HumanPlayer(Player):
             except ValueError:
                 # If that spot is not available on the board, print out "invalid" to tell player
                 if val < 0:
-                    print(Fore.RED + 'Invalid space number: You can only enter the number range 0-8. Try again.')
+                    print(Fore.RED + 'The number is too small. Only the 0-8 number range can be entered. Try again.')
                 elif val > 8:
-                    print(Fore.RED + 'Invalid space number: You can only enter the number range 0-8. Try again.')
+                    print(Fore.RED + 'The number is high. Only the 0-8 number range can be entered. Try again.')
                 else:   
-                    print(Fore.RED + 'Invalid square number: This space has been occupied. You can only enter the number range 0-8. Try again.')
+                    print(Fore.RED + 'This space has been occupied. Only the 0-8 number range can be entered. Try again.')
 
         return val
