@@ -16,20 +16,22 @@ class TicTacToe:
     
     def instructions(self): 
         """ instruction method to explain rule """
-        print(f"""{Fore.BLUE}Here are step-by-step how to play Tic-Tac-Toe.
-        Two players, human player takes 'X', and random computer player takes 'O'.
-        In with an empty three multiply three grid. This grid consists of three rows and three columns,
-        resulting in a total of nine cells.
-        - Players take turns placing their symbol X or O in any empty cell of the grid 
-          by typing the number 0-8 as shown on the first board.
-        - Each number representing each cell in the board.
-        - The human player 'X' makes the initial move.
-        - The random computer player will generate the number to move automatically.
-        - The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.
-        - The human player to achieve this wins the game.
-        - You can stop or continue to play by selecting a simple menu using the arrow up and down 
-          to enter Play Again or Quit.""" )
-
+        print(f"""{Fore.BLUE}
+    Here are step-by-step how to play Tic-Tac-Toe.
+Two players, human player takes 'X', and random computer player takes 'O'.
+In with an empty three multiply three grid. This grid consists of three rows and three columns,
+resulting in a total of nine cells.
+- Players take turns placing their symbol X or O in any empty cell of the grid 
+  by typing the number 0-8 as shown on the first board.
+- Each number representing each cell in the board.
+- The human player 'X' makes the initial move.
+- The random computer player will generate the number to move automatically.
+- The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.
+- The human player to achieve this wins the game.
+- You can stop or continue to play by selecting a simple menu using the arrow up and down 
+    to enter Play Again or Quit.
+      
+      """) 
     def print_board(self):
         """ print board method to print out the first board """
         formatted_board_lines = ['| ' + ' | '.join(self.board[i*3:(i + 1)*3]) + ' |' for i in range(3)]
