@@ -129,7 +129,6 @@ def play(game, x_player, o_player, print_game=True):
     if print_game:
             print("It's a tie!")
 
-
 if __name__ == '__main__':
     # Import human player nad random computer player from player file to the top of the page first
     options = ["Play Again", "Quit"]
