@@ -29,7 +29,7 @@ resulting in a total of nine cells.
 - The objective is to get three of your symbols in a row, either horizontally, vertically, or diagonally.
 - The human player to achieve this wins the game.
 - You can stop or continue to play by selecting a simple menu using the arrow up and down 
-    to enter Play Again or Quit.
+  to enter Play Again or Quit.
       
       """) 
     def print_board(self):
@@ -38,20 +38,18 @@ resulting in a total of nine cells.
         formatted_board = '\n'.join(formatted_board_lines)
         print(formatted_board)
 
-    # Creates method to print out the number on the board, What number corresponds to what box
     @staticmethod
     def print_board_nums():
-        # What indices are in the rows for each of the rows like sub array[(0,1,2),(3,4,5),(6,7,8)](just like on the paint board)
+        """ Creates method to print out the number on the board(What number corresponds to what box) """
         number_board = [f'{i}' for i in range (9)]
         number_board = [number_board[i:i+3] for i  in range(0, 9, 3)] 
         for row in number_board: 
             print('| ' + ' | '.join(row) + ' |')
 
-    # Create available moves method to tell player what are the available moves after they make a move
     def available_moves(self):
+        """ This method to create available moves(to tell player what are the available moves after they make a move """
         moves = []
         for (i, spot) in enumerate(self.board):
-            # ['x', 'x', 'o'] --> [(0:'x'), (1:'x'), (2:'x')]
             if spot == ' ':
                 moves.append(i)
         return moves
@@ -63,7 +61,7 @@ resulting in a total of nine cells.
         return self.board.count(' ')
 
     def make_move(self, square, letter):
-        # If valid move, assign square to letter then make a move then return true if invalid return false
+        """ if valid move this method will assign square to letter then make a move then return true if invalid return false"""
         if self.board[square] == ' ':
             self.board[square] = letter
             if self.winner(square, letter):
@@ -73,7 +71,7 @@ resulting in a total of nine cells.
         return False
 
     def winner(self, square, letter):
-        # Check all of 3 in a row anywhere
+        """ This method to check all of 3 in row anywhere"""
         row_ind = square // 3 
         row = self.board[row_ind*3 : (row_ind + 1)*3]
         if all([spot == letter for spot in row]):
@@ -86,9 +84,7 @@ resulting in a total of nine cells.
         if all([spot == letter for spot in column]):
             return True
         
-        # Check diagonals
-        # Only if the square is an even number (0, 2, 4, 6, 8)
-        # These are the only moves possible to win a diagonal
+        # Check diagonals Only if the square is an even number (0, 2, 4, 6, 8)(These are the only moves possible to win a diagonal)
         if square % 2 == 0:
             # Left to right diagonal
             diagonal1 = [self.board[i] for i in [0, 4, 8]]
@@ -101,16 +97,14 @@ resulting in a total of nine cells.
             # If all of these fail
         return False
             
-# Define the play function outside the TicTacToe class to passing in a game, an X player, and O player to print out the step to tell player
 def play(game, x_player, o_player, print_game=True): 
+    """ Define the play function outside the TicTacToe class to passing in a game, an X player, and O player to print out the step to tell player """
     # Return the winner of the game(the letter)! or None for a tie
     if print_game:
         game.print_board_nums()
-    # Starting letter
     letter = 'X' 
 
-    # Iterate while the game still has empty squares
-    # Return the winner name using return statement to break out the loop
+    # Iterate while the game still has empty squares, return the winner name using return statement to break out the loop
     while game.empty_squares():
         if letter == 'O':
             square = o_player.get_move(game)
