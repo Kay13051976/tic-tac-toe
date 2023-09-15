@@ -1,6 +1,6 @@
-from player import HumanPlayer, RandomComputerPlayer
 from colorama import Fore, Back, Style
 from simple_term_menu import TerminalMenu
+from player import HumanPlayer, RandomComputerPlayer
 
 
 class TicTacToe:

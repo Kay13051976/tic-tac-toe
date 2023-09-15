@@ -114,9 +114,9 @@ The flowchart represents the logic of the application:
 ![CI Python Linter Check run.py page](documentation/run_py_page_ci_python_linter_check.png)
   ## Bugs
    - Solved bugs 
-  The TicTacToe game does not loop because it places the while loop method in the wrong position. The while loop method has been placed in the bottle of the run.py page to make it work.
+  The TicTacToe game does not loop because it places the while loop method in the wrong position. The while loop method has been placed in the bottom of the run.py page to make it work.
 
-   - The instruction content displayed the wrong literacy rule, so I have fixed it by using the f-string instead of the escape character
+   - The instruction content in the instruction method displayed the wrong literacy rule, so I have fixed it by using the f-string instead of the escape character
     
    ![instruction content without f-string](documentation/instruction_without_fstring.png)
 
