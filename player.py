@@ -50,21 +50,24 @@ class HumanPlayer(Player):
             except ValueError:
                 # If that spot is not available on the board,
                 # print out "invalid" to tell player
-                if val < 0:
-                    print(
-                        f"""{Fore.RED}The number is too small.
-Only the 0-8 number range can be entered.
-Try again."""
-                        )
-                elif val > 8:
-                    print(
-                        f"""{Fore.RED}The number is too high.
-Only the 0-8 number range can be entered.
-Try again."""
-                        )
+                if val is not None:
+                    if val < 0 or val > 8:
+                        print(
+                            f"""{Fore.RED}The number is too small.
+    Only the 0-8 number range can be entered.
+    Try again."""
+                            )
+                    else:
+                        print(
+                            f"""{Fore.RED}This space has been occupied.
+        Only the 0-8 number range can be entered.
+        Try again.""")
+
                 else:
                     print(
-                        f"""{Fore.RED}This space has been occupied.
-Only the 0-8 number range can be entered.
-Try again.""")
+                        f"""{Fore.RED}The number is too high.
+        Only the 0-8 number range can be entered.
+        Try again."""
+                                )
         return val
+                    
