@@ -53,7 +53,7 @@ class HumanPlayer(Player):
                 if val is not None:
                     if val < 0 or val > 8:
                         print(
-                            f"""{Fore.RED}The number is too small.
+                            f"""{Fore.RED}The number is out of range.
     Only the 0-8 number range can be entered.
     Try again."""
                             )
@@ -65,9 +65,8 @@ class HumanPlayer(Player):
 
                 else:
                     print(
-                        f"""{Fore.RED}The number is too high.
+                        f"""{Fore.RED}Invalid input.
         Only the 0-8 number range can be entered.
         Try again."""
                                 )
         return val
-                    
