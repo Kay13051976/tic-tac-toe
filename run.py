@@ -16,7 +16,7 @@ class TicTacToe:
         self.current_winner = None
 
     def greeting(self):
-        print(Fore.YELLOW + 'Welcome to Tic-Tic-Toe GAME!!!')
+        print(Fore.YELLOW + 'Welcome to Tic-Tic-Toe GAME!!!' + Style.RESET_ALL)
 
     def instructions(self):
         """ instruction method to explain rule """
