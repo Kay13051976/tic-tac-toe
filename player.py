@@ -47,7 +47,8 @@ class HumanPlayer(Player):
                 # Check this is a correct value by try to cast
                 if square not in ['0', '1', '2', '3', '4', '5', '6', '7', '8']:
                     print('=' * 10)
-                    print("!! please enter only 0 - 8. try again")
+                    print(f"""{Fore.RED}
+                          !! please enter only 0 - 8. try again""")
                     continue
                 val = int(square)
                 if val not in game.available_moves():
